@@ -92,7 +92,7 @@ body {
     padding: 10px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-size: 20px;
     gap: 8px;
   }
