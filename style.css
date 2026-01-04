@@ -55,12 +55,6 @@ body {
 .checkbox {
   cursor: pointer;
 }
-#checkbox1,
-#checkbox2,
-#checkbox3,
-#checkbox4 {
-  width: 25px;
-}
 
 @media (max-width: 500px) {
   .main {
