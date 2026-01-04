@@ -56,7 +56,11 @@ body {
 
 @media (max-width: 500px) {
   .main {
+    min-height: 30vh;
     min-width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .passText {
     font-size: 18px;
