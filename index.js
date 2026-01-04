@@ -71,9 +71,25 @@ const checkboxHandeler = () => {
 };
 
 checkboxHandeler();
+sliderHanderler();
 
 range.addEventListener("input", sliderHanderler);
 checkbox[0].addEventListener("input", checkboxHandeler);
 checkbox[2].addEventListener("input", checkboxHandeler);
 checkbox[4].addEventListener("input", checkboxHandeler);
 checkbox[6].addEventListener("input", checkboxHandeler);
+
+refreshBtn.addEventListener("click", () => {
+  sliderHanderler();
+});
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard
+    .writeText(finalPass)
+    .then(() => {
+      console.log("Copied to clipboard");
+    })
+    .catch((err) => {
+      console.error("Failed to copy:", err);
+    });
+});
