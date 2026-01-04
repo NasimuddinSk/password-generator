@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 48, 54);
+}
+
+.main {
+  background-color: rgb(184, 44, 114);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+.passLay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.inputLay {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#range {
+  width: 50%;
+  cursor: pointer;
+}
+#rangeValue {
+  font-size: 20px;
+}
+
+.charactersLay {
+  display: flex;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+.charactersTxt {
+  margin-right: 20px;
+}

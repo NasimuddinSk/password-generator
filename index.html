@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="passLay">
+        <h1 class="passText">asf6534$%#kjha</h1>
+        <i id="refreshBtn" class="fa-solid fa-arrows-rotate icon refresh"></i>
+
+        <i id="copyBtn" class="fa-solid fa-copy copyBtn icon"></i>
+      </div>
+      <div class="inputLay">
+        <label for="range" id="rangeValue">Password Length</label>
+        <input type="range" id="range" min="6" max="25" />
+      </div>
+      <div class="charactersLay">
+        <p class="charactersTxt">Characters Used</p>
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="checkbox1"
+          id="checkbox1"
+          checked
+        />
+        <label class="checkbox" for="checkbox1">Uppercase</label>
+        <input class="checkbox" type="checkbox" checked id="checkbox2" />
+        <label class="checkbox" for="checkbox2">Lowercase</label>
+        <input class="checkbox" type="checkbox" checked id="checkbox3" />
+        <label class="checkbox" for="checkbox3">Numbers</label>
+        <input class="checkbox" type="checkbox" checked id="checkbox4" />
+        <label class="checkbox" for="checkbox4">Symbols</label>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
