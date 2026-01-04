@@ -3,8 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Genarator</title>
 
+    <!-- SEO TITLE -->
+    <title>
+      Free Secure Password Generator Online | Strong Random Passwords
+    </title>
+
+    <!-- SEO META DESCRIPTION -->
+    <meta
+      name="description"
+      content="Generate strong, secure, and random passwords online for free. Customize password length, use uppercase, lowercase, numbers, and symbols. Fast, safe & privacy-friendly password generator."
+    />
+
+    <!-- SEO KEYWORDS (minor ranking factor, still useful) -->
+    <meta
+      name="keywords"
+      content="password generator, strong password generator, random password, secure password, online password generator, free password generator"
+    />
+
+    <!-- AUTHOR -->
+    <meta name="author" content="Nasimuddin Sk" />
+
+    <!-- OPEN GRAPH (Social Sharing) -->
+    <meta property="og:title" content="Free Secure Password Generator Online" />
+    <meta
+      property="og:description"
+      content="Create strong and secure passwords instantly. Choose length, symbols, numbers & more."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://nasimuddinsk.github.io/password-generator/"
+    />
+
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,12 +44,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
+      <!-- H1 is VERY IMPORTANT FOR SEO -->
+      <h1>Free Secure Password Generator</h1>
+
+      <p>
+        Use this free online password generator to create strong, secure, and
+        random passwords for your accounts. Customize the password length and
+        choose uppercase letters, lowercase letters, numbers, and symbols.
+      </p>
       <div class="passLay">
-        <h1 class="passText"></h1>
+        <h2 class="passText"></h2>
         <i id="refreshBtn" class="fa-solid fa-arrows-rotate icon refresh"></i>
 
         <i id="copyBtn" class="fa-solid fa-copy copyBtn icon"></i>
@@ -35,15 +76,49 @@
           id="checkbox1"
           checked
         />
-        <label class="checkbox" for="checkbox1">Uppercase</label>
+        <label class="checkbox" for="checkbox1">Uppercase (A-Z)</label>
         <input class="checkbox" type="checkbox" checked id="checkbox2" />
-        <label class="checkbox" for="checkbox2">Lowercase</label>
+        <label class="checkbox" for="checkbox2">Lowercase (a-z)</label>
         <input class="checkbox" type="checkbox" checked id="checkbox3" />
-        <label class="checkbox" for="checkbox3">Numbers</label>
+        <label class="checkbox" for="checkbox3">Numbers (1-9)</label>
         <input class="checkbox" type="checkbox" checked id="checkbox4" />
-        <label class="checkbox" for="checkbox4">Symbols</label>
+        <label class="checkbox" for="checkbox4">Symbols (#$)</label>
       </div>
+      <!-- SEO STATIC CONTENT -->
+      <section>
+        <h2>Why Use Our Password Generator?</h2>
+        <ul>
+          <li>✔ Generates strong and random passwords</li>
+          <li>✔ Fully client-side (no data stored)</li>
+          <li>✔ Customizable length and characters</li>
+          <li>✔ Free and easy to use</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How to Create a Strong Password</h2>
+        <p>
+          A strong password should be at least 12 characters long and include a
+          mix of uppercase letters, lowercase letters, numbers, and symbols.
+          Avoid using personal information or common words.
+        </p>
+      </section>
+
+      <section>
+        <h2>Is This Password Generator Safe?</h2>
+        <p>
+          Yes. This password generator runs entirely in your browser. No
+          passwords are stored or transmitted over the internet, making it
+          completely safe and privacy-friendly.
+        </p>
+      </section>
     </div>
+    <footer style="margin-top: 20px; color: bisque; font-size: 12px">
+      <p>
+        © 2026 Free Password Generator by Nasimuddin Sk | Open Source & Privacy
+        Friendly
+      </p>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

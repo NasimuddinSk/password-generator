@@ -23,7 +23,7 @@ const sliderHanderler = () => {
     return;
   }
 
-  for (let i = 0; i <= range.value; i++) {
+  for (let i = 1; i <= range.value; i++) {
     const index = Math.floor(Math.random() * pass.length);
     finalPass += pass[index];
   }
