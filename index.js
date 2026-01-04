@@ -67,7 +67,6 @@ const checkboxHandeler = () => {
     const p = pass.replaceAll(Symbol, "");
     pass = p;
   }
-  console.log(pass);
 };
 
 checkboxHandeler();
@@ -79,17 +78,15 @@ checkbox[2].addEventListener("input", checkboxHandeler);
 checkbox[4].addEventListener("input", checkboxHandeler);
 checkbox[6].addEventListener("input", checkboxHandeler);
 
-refreshBtn.addEventListener("click", () => {
-  sliderHanderler();
-});
+refreshBtn.addEventListener("click", sliderHanderler);
 
 copyBtn.addEventListener("click", () => {
   navigator.clipboard
-    .writeText(finalPass)
+    .writeText(passText[0].textContent)
     .then(() => {
-      console.log("Copied to clipboard");
+      alert("Copied to clipboard");
     })
     .catch((err) => {
-      console.error("Failed to copy:", err);
+      alert("Failed to copy:", err);
     });
 });
