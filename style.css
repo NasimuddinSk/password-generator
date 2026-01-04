@@ -53,6 +53,34 @@ body {
 .checkbox {
   cursor: pointer;
 }
-.charactersTxt {
-  margin-right: 20px;
+
+@media (max-width: 500px) {
+  .main {
+    min-width: 95%;
+  }
+  .passText {
+    font-size: 18px;
+    padding: 2px;
+  }
+  .inputLay {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5px;
+  }
+  #range {
+    width: 95%;
+  }
+  .charactersLay {
+    border-top: 2px solid rgba(92, 92, 92, 0.226);
+    margin-top: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .charactersTxt {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
